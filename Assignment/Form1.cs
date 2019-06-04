@@ -32,5 +32,22 @@ namespace Assignment
                 MessageBox.Show("Type in two numbers.");
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double Resistor1, Resistor2, Resistor3, ResistanceT;
+                Resistor1 = Convert.ToDouble(textBox3.Text);
+                Resistor2 = Convert.ToDouble(textBox4.Text);
+                Resistor3 = Convert.ToDouble(textBox5.Text);
+                ResistanceT = Resistor1 + Resistor2 + Resistor3;
+                label6.Text = "Restistance = " + ResistanceT;
+            }
+            catch
+            {
+                MessageBox.Show("Type in two numbers.");
+            }
+        }
     }
 }
